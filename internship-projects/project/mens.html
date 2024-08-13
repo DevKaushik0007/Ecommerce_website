@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Male Fashion</title>
+    <link rel="stylesheet" href="styles/mens-banner.css" />
+    <link rel="stylesheet" href="styles/mens-footer.css" />
+    <link rel="stylesheet" href="styles/mens-header.css" />
+    <link rel="stylesheet" href="styles/mens-sales.css" />
+    <link rel="stylesheet" href="styles/mens-insta.css" />
+    <link rel="stylesheet" href="styles/mens-latest.css" />
+    <link rel="stylesheet" href="styles/mens-hero.css" />
+    <link rel="stylesheet" href="styles/mens.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <p>Free shipping, 30-day return or refund guarantee.</p>
+        <div class="top-bar-right">
+          <a href="#">SIGN IN</a>
+          <a href="#">FAQS</a>
+          <div class="currency-dropdown">
+            <span>USD</span>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="images/logo (1).png" alt="Logo" /></a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">
+          &#9776;
+          <!-- Unicode character for hamburger icon -->
+        </button>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="#" class="icon">🔍</a>
+          <a href="#" class="icon">❤️</a>
+          <a href="#" class="icon">🛒 $0.00</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-carousel">
+        <div class="hero-carousel-item active">
+          <img src="images/hero-1.jpg" alt="Hero Image" />
+          <div class="image_text">
+            <h1>Summer Collections</h1>
+            <h5>
+              Fall Winter <br />
+              Collections 2030
+            </h5>
+            <p>
+              A specialist label creating luxury essentials. Ethically
+              <br />
+              crafted with an unwavering commitment to exceptional quality.
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+        <div class="hero-carousel-item">
+          <img src="images/hero-2.jpg" alt="Hero Image" />
+          <div class="image_text">
+            <h1>Summer Collections</h1>
+            <h5>
+              Fall Winter <br />
+              Collections 2030
+            </h5>
+            <p>
+              A specialist label creating luxury essentials. Ethically
+              <br />
+              crafted with an unwavering commitment to exceptional quality.
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-carousel-controls">
+        <button class="prev">&#10094;</button>
+        
+        <button class="next">&#10095;</button>
+        
+      </div>
+    </section>
+
+    <!-- BANNER SECTION -->
+    <section class="banner spad">
+      <div class="container">
+        <div class="banner-container">
+          <div class="banner-item banner1">
+            <div class="banner-item-pic">
+              <img src="images/banner-1.jpg" alt="Clothing Collections 2030" />
+            </div>
+            <div class="banner-item-text">
+              <h2>Clothing Collections 2030</h2>
+              <a href="#">Shop now</a>
+            </div>
+          </div>
+          <div class="banner-flex">
+            <div class="banner-item banner2">
+              <div class="banner-item-pic">
+                <img src="images/banner-2.jpg" alt="Accessories" />
+              </div>
+              <div class="banner-item-text" id="banner_2">
+                <h2>Accessories</h2>
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+            <div class="banner-item banner3">
+              <div class="banner-item-pic">
+                <img src="images/banner-3.jpg" alt="Shoes Spring 2030" />
+              </div>
+              <div class="banner-item-text">
+                <h2>Shoes Spring 2030</h2>
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="categories__text">
+              <h2>
+                Clothings Hot <br />
+                <span>Shoe Collection</span> <br />
+                Accessories
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="categories__hot__deal">
+              <img src="images/product-sale.png" alt="Hot Deal" />
+              <div class="hot__deal__sticker">
+                <span>Sale Of</span>
+                <h5>$29.99</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1">
+            <div class="categories__deal__countdown">
+              <span>Deal Of The Week</span>
+              <h2>Multi-pocket Chest Bag Black</h2>
+              <div class="categories__deal__countdown__timer" id="countdown">
+                <div class="cd-item">
+                  <span>3</span>
+                  <p>Days</p>
+                </div>
+                <div class="cd-item">
+                  <span>1</span>
+                  <p>Hours</p>
+                </div>
+                <div class="cd-item">
+                  <span>50</span>
+                  <p>Minutes</p>
+                </div>
+                <div class="cd-item">
+                  <span>18</span>
+                  <p>Seconds</p>
+                </div>
+              </div>
+              <a href="#" class="primary-btn">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+
+    <!-- Instagram Section -->
+    <div class="insta">
+      <div class="contain">
+        <div class="grid">
+          <div class="item">
+            <img src="images/instagram-1.jpg" alt="Accessories" />
+          </div>
+          <div class="item">
+            <img src="images/instagram-2.jpg" alt="Clothes" />
+          </div>
+          <div class="item">
+            <img src="images/instagram-3.jpg" alt="Interior" />
+          </div>
+          <div class="item">
+            <img src="images/instagram-4.jpg" alt="Wardrobe" />
+          </div>
+          <div class="item">
+            <img src="images/instagram-5.jpg" alt="Bag" />
+          </div>
+          <div class="item">
+            <img src="images/instagram-6.jpg" alt="Chair" />
+          </div>
+        </div>
+        <div class="description">
+          <h1>Instagram</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <h2>#Male_Fashion</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest News Section -->
+    <section class="latest spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <span>Latest News</span>
+              <h2>Fashion New Trends</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- First Blog Item -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__item">
+              <div
+                class="blog__item__pic"
+                style="background-image: url('images/blog-1.jpg')"
+              ></div>
+              <div class="blog__item__text">
+                <span><img src="images/calendar.png" alt="Calendar" /></span>
+                <span>16 February 2020</span>
+                <h5>What Curling Irons Are The Best Ones</h5>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Second Blog Item -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__item">
+              <div
+                class="blog__item__pic"
+                style="background-image: url('images/blog-2.jpg')"
+              ></div>
+              <div class="blog__item__text">
+                <span><img src="images/calendar.png" alt="Calendar" /></span>
+                <span>21 February 2020</span>
+                <h5>Eternity Bands Do Last Forever</h5>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Third Blog Item -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="blog__item">
+              <div
+                class="blog__item__pic"
+                style="background-image: url('images/blog-3.jpg')"
+              ></div>
+              <div class="blog__item__text">
+                <span><img src="images/calendar.png" alt="Calendar" /></span>
+                <span>28 February 2020</span>
+                <h5>The Health Benefits Of Sunglasses</h5>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section" id="fs">
+          <div class="logo">
+            <img src="images/footer-logo.png" alt="Footer Logo" />
+          </div>
+          <p>
+            The customer is at the heart of our unique business model, which
+            includes design.
+          </p>
+          <div class="payment-methods">
+            <img src="images/payment.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>SHOPPING</h3>
+          <ul>
+            <li><a href="#">Clothing Store</a></li>
+            <li><a href="#">Trending Shoes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Return & Exchanges</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>NEWSLETTER</h3>
+          <p>
+            Be the first to know about new arrivals, look books, sales & promos!
+          </p>
+          <input type="email" placeholder="Your email" />
+          <button type="submit">✉️</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          Copyright © 2024 All rights reserved | This template is made with ❤️
+          by Colorlib
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="mens.js"></script>
+  </body>
+</html>

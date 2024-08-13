@@ -1,0 +1,98 @@
+
+.insta {
+    padding: 30px;
+  }
+  
+  .contain {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    width: 70%;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 20px;
+  }
+  
+  .description h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .description p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .description h2 {
+    font-size: 1.5em;
+    color: #e74c3c;
+  }
+  
+
+  @media (max-width: 768px) {
+    .contain {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .grid {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .description {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .description h1 {
+      font-size: 2em;
+    }
+  
+    .description p {
+      font-size: 0.9em;
+    }
+  
+    .description h2 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .description h1 {
+      font-size: 1.8em;
+    }
+  
+    .description p {
+      font-size: 0.85em;
+    }
+  
+    .description h2 {
+      font-size: 1em;
+    }
+  }
+  
