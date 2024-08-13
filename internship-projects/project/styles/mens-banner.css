@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner-container {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+
+.banner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 400px;
+    position: relative;
+}
+
+.banner-flex {
+    display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+	padding-top: 40px;
+
+}
+
+.banner-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-item-pic img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+	position: relative;
+}
+
+.banner-item-text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    padding: 20px;
+    color:darkblue;
+    border-radius: 5px;
+    width: 80%; 
+}
+
+.banner-item-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner-item-text a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.banner1 .banner-item-text,
+.banner2 .banner-item-text,
+.banner3 .banner-item-text {
+    left: 50%;
+    transform: translateX(-50%) translateY(150%); 
+    padding: 20px;
+}
+
+.banner-container a{
+    text-decoration: none;
+    color: red;
+
+}
+
+.banner-container a:hover{
+    color: red;
+    font-size: large;
+    text-decoration:line-through;
+
+}

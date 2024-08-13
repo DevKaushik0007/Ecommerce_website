@@ -1,0 +1,172 @@
+.sales {
+    background: #f3f2ee;
+    padding-top: 80px;
+}
+
+.gridmain {
+    padding-top: 10px;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+#gisale {
+    position: relative;
+}
+
+.producttop {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: 45px;
+    border-radius: 50%;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.producttop span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.categories__text {
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.categories__text h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #333;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.categories__deal__countdown {
+    text-align: center;
+    padding-left: 0;
+}
+
+.categories__deal__countdown span {
+    font-size: 20px;
+    color: #f00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.categories__deal__countdown h2 {
+    font-size: 36px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.categories__deal__countdown__timer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px; 
+    flex-wrap: nowrap; 
+}
+
+.cd-item {
+    text-align: center;
+}
+
+.cd-item span {
+    font-size: 36px;
+    color: #000;
+}
+
+.cd-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0 0;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producttop {
+        width: 120px;
+        height: 120px;
+        top: -30px;
+        right: 30px;
+        padding-top: 20px;
+    }
+
+    .categories__text h2 {
+        font-size: 28px;
+    }
+
+    .categories__deal__countdown__timer {
+        flex-wrap: nowrap; 
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .producttop {
+        width: 100px;
+        height: 100px;
+        top: -20px;
+        right: 20px;
+        padding-top: 15px;
+    }
+
+    .categories__text h2 {
+        font-size: 24px;
+    }
+
+    .categories__deal__countdown__timer {
+        flex-wrap: nowrap; 
+        gap: 10px; 
+    }
+
+    .cd-item {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .cd-item span {
+        font-size: 28px;
+    }
+
+    .cd-item p {
+        font-size: 14px;
+    }
+}
