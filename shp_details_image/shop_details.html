@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>shop_details</title>
+    <style>
+    *{
+            margin: 0px;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+     .upperheader{
+        width: 100%;
+        height: 40px;
+        color: white;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+     .usubpart{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+     }
+
+     #test{
+
+        display: flex;
+     }
+     .anker{
+        text-decoration:none;
+        color: white;
+     }
+     .lowerheader{
+        width: 100%;
+        height: 80px;
+        color:black;
+        background-color:#ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+     .midsub{
+        width: 40%;
+     }
+     .unorder{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        
+     }
+     .foranker{
+        text-decoration:none;
+        color: black;
+        font-size: 20px;
+     }
+     .nav {
+            position: relative;
+            display: inline-block;
+        }
+
+     .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .nav:hover .dropdown-content {
+            display: block; 
+        }
+        .otherheader{
+            width: 100%;
+        height: 120px;
+        color:black;
+        background-color:#f3f2ee;
+        position: relative;
+      
+
+       
+        }
+        .othercontent{
+            width: 100%;
+            position: absolute;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .pity{
+            width: 100vw;
+            height: 550px;
+            display: flex;
+            gap: 30%;
+            background-color:#f3f2ee;
+            flex-direction: row;
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+        }
+        .subpity1{
+             height: 300px; 
+             margin-top: 100px;
+             margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .up-down{
+            display: flex;
+            flex-direction: column;
+        }
+         .bigdiv{
+            /* height: 600px;
+            width: 100vw; */
+            /* display: flex;
+            justify-content: center; */
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            
+        } 
+        .star fa-solid fa-star{
+            background-color: rgb(216, 112, 147);
+        }
+        .mainbutton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: 300px;
+        }
+        .button1{
+            height: 50px;
+            width: 50px;
+        
+        }
+         :hover .button1{
+            transform: none;
+            background-color: black;
+            color: white;
+        }
+        .button2{
+            height: 50px;
+            width: 50px;
+        
+        }
+         :hover .button2{
+            transform: none;
+            background-color: black;
+            color: white;
+        }
+        .button3{
+            height: 50px;
+            width: 50px;
+        
+        }
+         :hover .button3{
+            transform: none;
+            background-color: black;
+            color: white;
+        }
+        .button4{
+            height: 50px;
+            width: 50px;
+        
+        }
+         :hover .button4{
+            transform: none;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+       <div class="upperheader">
+        <div><p>Free shipping, 30-day return or refund guarantee.</p></div>
+        <div class="usubpart">
+            <a class="anker"href="#">SIGN IN</a>
+            <a class="anker" href="#">FAQS</a>
+        <div>USA<i class="fa-solid fa-angle-down"></i></div>
+        </div>
+       </div>
+       <div class="lowerheader">
+        <div><img src="logo.png" alt=""></div>
+        <div class="midsub">
+            <ul class="unorder">
+                <li><a class="foranker" href="#">Home</a></li>
+                <li><a class="foranker"href="#">Shop</a></li>
+                <li><div class="nav">
+                    <a class="foranker" href="#">Pages</a>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Shop Details</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Check Out</a>
+                        <a href="#">Blog Details</a>
+                    </div>
+                </div>
+                </li>
+                <li><a class="foranker" href="#">Blog</a></li>
+                <li><a class="foranker"href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <img src="cart.png" alt="">
+        </div>
+       </div>
+    </header>
+    <div class="otherheader">
+        <div class="othercontent">
+        <div><a class="foranker" href="fashion.html">Home</a>><a class="foranker" href="">Shop</a>><a style="color: rgb(160, 157, 157);" class="foranker" href="">Product Details</a></div>
+    </div>
+    </div>
+    <div class="pity">
+        <div class="subpity1">
+            <img src="thumb-1.png" alt="">
+            <img src="thumb-2.png" alt="">
+            <img src="thumb-3.png" alt="">
+            <img src="thumb-4.png" alt="">
+            
+        </div>
+        <div class="subpity2"><img src="product-big-2.png" alt=""></div>
+    </div>
+    <div class="bigdiv">
+        <div><h1>Hooded thermal anorak</h></div><br>
+        <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>- 5 reviews</span>
+        </div><br>
+       <div><h1>$270.00<span style="text-decoration: line-through ;color:rgb(160, 156, 156);">70.00</span></h1></div><br>
+            <div><p style="font-size: 30px; ">Coat with quilted lining and an adjustable hood. Featuring long sleeves with adjustable
+                cuff tabs, adjustable asymmetric hem with elastic side tabs and a front zip fastening
+            with placket.</p></div>
+          <div class="mainbutton">
+            <div>
+                <label for="">SIZE:
+                <button  class="button1">XXL</button>
+                <button class="button2">XL</button>
+                <button class="button3">L</button>
+                <button class="button4">S</button>
+            </label></div> 
+            <div>
+                <label for="">color:
+                    <button  class="button2" type="redio"></button>
+                    <button class="button2" type="redio"></button>
+                    <button class="button2" type="redio"></button>
+                    <button class="button2" type="redio"></button>
+
+            </div>
+            </div>
+            <div>
+                <input type="text">
+                <div class="up-down">
+                <span class="fa fa-angle-up inc qtybtn">
+                </span>
+                <span class="fa fa-angle-down inc qtybtn">
+                </span>
+                  </div>
+                  <button>add to card</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>ADD TO WISHLIST</span>
+                <i class="fa fa-exchange"></i>
+                <span>ADD TO COMPARE</span>
+            </div><br>
+            <div><span>Guaranteed Safe Checkout</span></div>
+            <div><img src="details-payment.png" alt=""></div>
+            <div>
+                <ul>
+                    <li><span>SKU:</span>364739</li>
+                    <li><span>Categories:</span>cloths</li>
+                    <li><span>Tag:</span>clothes,skin,body</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Discription</a></li>
+                    <li><a href="">Costumer Previews(5)</a></li>
+                    <li><a href="">Additional information</a></li>
+                </ul>
+            </div>
+        </div>
+        
+            <!-- <div>
+                <div><p>Nam tempus turpis at metus scelerisque placerat nulla deumantos
+                    solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis
+                    ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo
+                pharetras loremos.</p><br>
+                <h3>product information</h3>
+            <p>A Pocket PC is a handheld computer, which features many of the same
+                capabilities as a modern PC. These handy little devices allow
+                individuals to retrieve and store e-mail messages, create a contact
+                file, coordinate appointments, surf the internet, exchange text messages
+                and more. Every product that is labeled as a Pocket PC must be
+                accompanied with specific software to operate the unit and must feature
+            a touchscreen and touchpad.</p>
+            <p>As is the case with any new technology product, the cost of a Pocket PC
+                was substantial during it’s early release. For approximately $700.00,
+                consumers could purchase one of top-of-the-line Pocket PCs in 2003.
+                These days, customers are finding that prices have become much more
+                reasonable now that the newness is wearing off. For approximately
+            $350.00, a new Pocket PC can now be purchased.</p><br>
+            <h3>material used</h3>
+            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
+                from synthetic materials, not natural like wool. Polyester suits become
+                creased easily and are known for not being breathable. Polyester suits
+                tend to have a shine to them compared to wool and cotton suits, this can
+                make the suit look cheap. The texture of velvet is luxurious and
+                breathable. Velvet is a great choice for dinner party jacket and can be
+            worn all year round.</p>
+            </div>
+
+
+          <div>
+            <h3>Product information</h3>
+            <br>
+            <p>A Pocket PC is a handheld computer, which features many of the same
+                capabilities as a modern PC. These handy little devices allow
+                individuals to retrieve and store e-mail messages, create a contact
+                file, coordinate appointments, surf the internet, exchange text messages
+                and more. Every product that is labeled as a Pocket PC must be
+                accompanied with specific software to operate the unit and must feature
+            a touchscreen and touchpad.</p>
+            <p>As is the case with any new technology product, the cost of a Pocket PC
+                was substantial during it’s early release. For approximately $700.00,
+                consumers could purchase one of top-of-the-line Pocket PCs in 2003.
+                These days, customers are finding that prices have become much more
+                reasonable now that the newness is wearing off. For approximately
+            $350.00, a new Pocket PC can now be purchased.</p><br>
+            <h3>material used</h3>
+            <p>Polyester is deemed lower quality due to its none natural quality’s. Made
+                from synthetic materials, not natural like wool. Polyester suits become
+                creased easily and are known for not being breathable. Polyester suits
+                tend to have a shine to them compared to wool and cotton suits, this can
+                make the suit look cheap. The texture of velvet is luxurious and
+                breathable. Velvet is a great choice for dinner party jacket and can be
+            worn all year round.</p>
+          </div> -->
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>

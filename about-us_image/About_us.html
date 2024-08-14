@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+     .upperheader{
+        width: 100%;
+        height: 40px;
+        color: white;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+     .usubpart{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+     }
+
+     #test{
+
+        display: flex;
+     }
+     .anker{
+        text-decoration:none;
+        color: white;
+     }
+     .lowerheader{
+        width: 100%;
+        height: 80px;
+        color:black;
+        background-color:#ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+     .midsub{
+        width: 40%;
+     }
+     .unorder{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        
+     }
+     .foranker{
+        text-decoration:none;
+        color: black;
+        font-size: 20px;
+     }
+     .nav {
+            position: relative;
+            display: inline-block;
+        }
+
+     .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .nav:hover .dropdown-content {
+            display: block; 
+        }
+        .otherheader{
+            width: 100%;
+        height: 120px;
+        color:black;
+        background-color:#f3f2ee;
+        position: relative;
+       
+        }
+        .othercontent{
+            width: 100%;
+            position: absolute;
+            margin-left: 40px;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .photodiv{
+            height: 400px;
+            margin: 60px 40px 10px 40px;
+           
+        }
+        .photo{
+            
+            height: 400px;
+            background-image: url(about-us.jpg);
+            z-index: 99%;
+        }
+        .write{
+            height: 200px;
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 20px 40px 20px 40px;
+        }
+        .cont{
+            text-align: center;
+            border: 30px solid white;
+            font-family: "Nunito Sans", sans-serif;
+            
+        }
+        .p{
+            line-height: 25px;
+            margin: 0 0 15px 0;
+        }
+        .comment{
+            width: 50%;
+            height: 500px;
+            background-color: rgb(214, 209, 209) ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #fa {
+            font-size: 70px;
+            color: red;
+        }
+        .author{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .testi{
+            width: 50%;
+     
+            background-image: url(testimonial-pic.jpg);
+            background-size: cover;
+        }
+        .test{
+            width: 100%;
+            height: 400px;
+        
+             display: flex; 
+             flex-direction: row;
+             justify-content: center;
+            /* text-align: center; */
+            align-items: center;
+        }
+        .pers{
+            height: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 10px solid white;
+            margin-top: 20px;
+            
+        }
+        .feedback{
+            display: flex;
+            font-size: 30px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+        .app{
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 15px solid white;
+            margin: 20px 40px 20px 40px;
+        }
+        .like{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .l{
+            margin-top: 50px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .apps{
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 25px solid white;
+            margin: 40px 20px 20px 250px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       <div class="upperheader">
+        <div><p>Free shipping, 30-day return or refund guarantee.</p></div>
+        <div class="usubpart">
+            <a class="anker"href="#">SIGN IN</a>
+            <a class="anker" href="#">FAQS</a>
+        <div>USA<i class="fa-solid fa-angle-down"></i></div>
+        </div>
+       </div>
+       <div class="lowerheader">
+        <div><img src="logo.png" alt=""></div>
+        <div class="midsub">
+            <ul class="unorder">
+                <li><a class="foranker" href="#">Home</a></li>
+                <li><a class="foranker"href="#">Shop</a></li>
+                <li><div class="nav">
+                    <a class="foranker" href="#">Pages</a>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Shop Details</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Check Out</a>
+                        <a href="#">Blog Details</a>
+                    </div>
+                </div>
+                </li>
+                <li><a class="foranker" href="#">Blog</a></li>
+                <li><a class="foranker"href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <img src="cart.png" alt="">
+        </div>
+       </div>
+    </header>
+    <div class="otherheader">
+        <div class="othercontent">
+        <div><h1>About us</h1></div>
+        <div><a class="foranker" href="fashion.html">Home</a>><span style="font-size: 15px">About us</span></div>
+    </div>
+    </div>
+    <div class="photodiv">
+        <div class="photo"></div>
+    </div>
+    <div class="write">
+        <div class="cont"><h1>Who We Are ?</h1><br><p class="p">Contextual advertising programs sometimes have strict policies that need to be adhered too.
+            Let’s take Google as an example.</p></div>
+        <div class="cont"><h1>Who We Do ?</h1><br><p class="p">In this digital generation where information can be easily obtained within seconds, business
+            cards still have retained their importance.</p></div>
+        <div class="cont"><h1>Why Choose Us</h1><br><p class="p">A two or three storey house is the ideal way to maximise the piece of earth on which our home
+            sits, but for older or infirm people.</p></div>
+    </div>
+    <div id="test">
+    <div class="comment">
+       <div> <i id="fa"class="fa-solid fa-quote-left"></i></div>
+       <p style="margin-left: 30%; margin-right: 30%; font-size: 20px;">“Going out after work? Take your butane curling iron with you to the office, heat it up,
+        style your hair before you leave the office and you won’t have to make a trip back home.”
+    </p>
+    <div class="author"><img style="height: 80px;width: 80px; margin: 20px ;" src="testimonial-author.jpg" alt="">
+     <h1>Augusta Schultz <p style="font-style:italic;">Fashion Design</p></h1>
+    </div></div>
+    
+    <div class="testi"></div>
+</div>
+ <div class="pers">
+    <div class="feedback" ><h1 style="font-size: 80px;" >102</h1><div><p>our</p> <p>Clients</p></div> </div>
+    <div class="feedback"><h1  style="font-size: 80px;">30</h1><div><p>Total</p> <p>categories</p></div></div>
+    <div class="feedback"><h1  style="font-size: 80px;">102</h1><div><p>in</p><p>categories</p></div> </div> 
+  <div class="feedback"><h1  style="font-size: 80px;">98%</h1><div><p>Happy</p><p>customer</p></div> </div> 
+</div>
+<hr>
+<div class="like">
+     <div class="like1">
+    <div style="color: red; font-size: 20px; margin-left: 50px;margin-top: 30px;">our team</div><br>
+    <div><h1>Meet our team</h1></div></div></div>
+    <div class="app">
+        <div class="div1"><img src="team-1.jpg" alt=""><h1>jhon smith</h1><br><h2>fashion Design</h2></div>
+        <div class="div2"><img src="team-2.jpg" alt=""><h1>jhon smith</h1><br><h2>fashion Design</h2></div>
+        <div class="div3"><img src="team-3.jpg" alt=""><h1>jhon smith</h1><br><h2>fashion Design</h2></div>
+        <div class="div4"><img src="team-4.jpg" alt=""><h1>jhon smith</h1><br><h2>fashion Design</h2></div>
+    </div>
+    <div class="l">
+        <div class="li">
+       <div style="color: red; font-size: 20px; margin-left: 50px;margin-top: 30px;">PARTNER</div><br>
+       <div><h1>Happy Clients</h1></div></div></div>
+       <div class="apps">
+        <div class="div1"><img src="client-1.png" alt=""></div>
+        <div class="div2"><img src="client-2.png" alt=""></div>
+        <div class="div3"><img src="client-3.png" alt=""></div>
+        <div class="div4"><img src="client-4.png" alt=""></div>
+        <div class="div1"><img src="client-5.png" alt=""></div>
+        <div class="div2"><img src="client-6.png" alt=""></div>
+        <div class="div3"><img src="client-7.png" alt=""></div>
+        <div class="div4"><img src="client-8.png" alt=""></div>
+    </div>
+
+</body>
+</html>
